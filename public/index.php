@@ -1,7 +1,11 @@
 <?php
-include "../src/Animal.php";
-include "../src/Cat.php";
-include "../src/Dog.php";
+
+require __DIR__.'/../vendor/autoload.php';
+
+use App\Animal;
+use App\Cat;
+use App\Dog;
+
 $chat=new Animal();
 $chat->setname("Felix");
 $chat->setAge(12);
